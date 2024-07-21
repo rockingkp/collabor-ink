@@ -51,6 +51,10 @@ const Board = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
+    // Fill the canvas with a white background for download
+    cxt.fillStyle = "white";
+    cxt.fillRect(0, 0, canvas.width, canvas.height);
+
     const beginPath = (x, y) => {
       cxt.beginPath();
       cxt.moveTo(x, y);
