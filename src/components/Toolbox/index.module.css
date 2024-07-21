@@ -11,6 +11,10 @@
       @apply font-semibold;
       font-size: 14px;
       color: theme("colors.text1");
+
+      .strokeColorValue {
+        @apply capitalize;
+      }
     }
 
     .itemContainer {

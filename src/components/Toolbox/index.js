@@ -27,7 +27,10 @@ const Toolbox = () => {
     <div className={styles.toolboxContainer}>
       {showStrokeToolOption && (
         <div className={styles.toolItem}>
-          <h4 className={styles.toolText}>Stroke Colour</h4>
+          <h4 className={styles.toolText}>
+            Stroke Colour :{" "}
+            <span className={styles.strokeColorValue}>{color}</span>
+          </h4>
           <div className={styles.itemContainer}>
             <div
               className={cx(styles.colorBox, {
@@ -77,7 +80,9 @@ const Toolbox = () => {
 
       {showBrushToolOption && (
         <div className={styles.toolItem}>
-          <h4 className={styles.toolText}>Brush Size </h4>
+          <h4 className={styles.toolText}>
+            Brush Size : <span>{size}</span>{" "}
+          </h4>
           <div className={styles.itemContainer}>
             <input
               type="range"
